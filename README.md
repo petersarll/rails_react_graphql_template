@@ -14,7 +14,11 @@ recreating this template:
     $ cd rails-react-graphql
     $ rails db:create
 
-if '$ rails db:create' fails, start your postgres database 
+if
+\$ rails db:create
+
+fails, start your postgres database
+
     $ postgres -D /usr/local/var/postgres
 
 Add the following to your GemFile
@@ -32,6 +36,7 @@ if error
 add these two lines to app/assets/config/manifest.js
 
 `//= link graphiql/rails/application.css`
+
 `//= link graphiql/rails/application.js`
 
 restart server:
