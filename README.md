@@ -50,3 +50,5 @@ restart server:
 check http://localhost:3000/ or the localhost you are using to make sure rails server is working
 
 check http://localhost:3000/graphiql or the localhost you are using to make sure rails graphiql is working
+
+![alt text](https://github.com/petersarll/rails_react_graphql_template/blob/master/README_images/localhost:graphqiql.png)
