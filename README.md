@@ -5,7 +5,9 @@ Basic template using ruby on rails, react, graphql, Apollo, and postgreSQL
 prerequisites:
 
 Ruby: 2.6.3
+
 node: 11.14.0
+
 Rails: 6.0.2
 
 recreating this template:
