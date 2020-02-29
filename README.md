@@ -26,7 +26,8 @@ fails, start your postgres database
 and try again.
 
 Add the following to your GemFile
-gem 'graphql', '~> 1.9', '>= 1.9.3'
+
+`gem 'graphql', '~> 1.9', '>= 1.9.3'`
 
     $ bundle install
     $ rails generate graphql:install
