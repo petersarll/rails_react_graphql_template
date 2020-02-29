@@ -23,6 +23,8 @@ fails, start your postgres database
 
     $ postgres -D /usr/local/var/postgres
 
+and try again.
+
 Add the following to your GemFile
 gem 'graphql', '~> 1.9', '>= 1.9.3'
 
@@ -45,5 +47,6 @@ restart server:
 
     $ rails server
 
-check your localhost /graphiql
-http://localhost:3000/graphiql to see if rails is working.
+check http://localhost:3000/ or the localhost you are using to make sure rails server is working
+
+check http://localhost:3000/graphiql or the localhost you are using to make sure rails graphiql is working
