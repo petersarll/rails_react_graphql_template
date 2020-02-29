@@ -14,8 +14,8 @@ recreating this template:
     $ cd rails-react-graphql
     $ rails db:create
 
-if
-\$ rails db:create
+if:
+`$ rails db:create`
 
 fails, start your postgres database
 
