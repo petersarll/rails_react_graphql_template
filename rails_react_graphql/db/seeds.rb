@@ -6,14 +6,14 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 Workout.create(
-  exerciseName: "Barbell Squat",
+  exercisename: "Barbell Squat",
   sets: "6",
   reps: "10",
   rest: "1 minute"
 )
 
 Workout.create(
-  exerciseName: "Dumbell Thruster",
+  exercisename: "Dumbell Thruster",
   sets: "3",
   reps: "15",
   rest: "30 seconds"
