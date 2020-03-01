@@ -1,13 +1,18 @@
 module Types
   class QueryType < Types::BaseObject
-    # Add root-level fields here.
-    # They will be entry points for queries on your schema.
+    field :all_workouts, [WorkoutType], null: true, description: "Returns a list of all exercises"
 
-    # TODO: remove me
-    field :test_field, String, null: false,
-      description: "An example field added by the generator"
-    def test_field
-      "Hello World!"
+    field :workout, WorkoutType, null: true do
+      description "Returns workout given an ID"
+      argument :id, ID, required: true
+    end 
+
+    def all_workouts
+      Workout.all
+    end
+
+    def workout(id:)
+      Workout.find_by(id: id)
     end
   end
 end
