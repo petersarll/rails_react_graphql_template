@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { ApolloProvider } from 'react-apollo'
 import { client } from './apollo'
-import WorkoutComponent from './WorkoutComponent'
-import WorkoutList from './WorkoutList'
+import WorkoutComponent from './Components/WorkoutComponent'
+import WorkoutList from './Components/WorkoutList'
 
 class App extends Component {
   render() {
