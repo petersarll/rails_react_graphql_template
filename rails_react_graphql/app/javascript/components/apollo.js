@@ -31,11 +31,21 @@ export const CREATE_WORKOUT = gql`
   }
 `
 
-// get a single book query
-export const GET_BOOK = gql`
-  query getWorkout($workoutid: ID!) {
-    workout(id: $workoutid) {
+// // get a single book query
+// export const GET_BOOK = gql`
+//   query getWorkout($workoutid: ) {
+//     workout(id: $workoutid) {
+//       exerciseName
+//     }
+//   }
+// `
+
+//get all workout queries
+export const GET_ALL_WORKOUTS = gql`
+  query allWorkouts {
+    allWorkouts {
       exerciseName
+      rest
     }
   }
 `
