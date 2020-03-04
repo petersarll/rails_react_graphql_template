@@ -1,6 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:ital,wght@1,200&family=Montserrat:wght@300&display=swap');
 
-.main {
+/* main page */
+.mp-1 {
+  /* position */
+  text-align: center;
+  /* font */
   font-family: 'IBM Plex Sans Condensed', sans-serif;
   font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  /* border */
+  border-style: solid;
+  border-color: lightgray;
+  border-width: 1px;
+  border-radius: 20px 20px 20px 20px;
+  /* box shadow */
+  -webkit-box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.75);
+}
+
+.mp-h1 {
+  font-size: 2rem;
 }

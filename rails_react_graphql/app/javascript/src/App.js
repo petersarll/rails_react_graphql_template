@@ -10,9 +10,8 @@ class App extends Component {
   render() {
     return (
       <ApolloProvider client={client}>
-        <div className="main">
-          <header>Add Header Here</header>
-          Here is the workout component
+        <div className="mp-1">
+          <header className="mp-h1">ReTrain</header>
           <WorkoutComponent />
           <WorkoutList />
         </div>
