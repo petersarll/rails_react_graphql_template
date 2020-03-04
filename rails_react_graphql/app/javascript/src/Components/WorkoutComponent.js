@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Mutation } from 'react-apollo'
-import { CREATE_WORKOUT } from './apollo'
+import { CREATE_WORKOUT } from '../apollo'
 
 class Workout extends Component {
   constructor(props) {
@@ -99,7 +99,7 @@ class Workout extends Component {
 
               <div>
                 <label>Rest</label>
-                <textarea
+                <input
                   rows="10"
                   cols="60"
                   id="rest"
