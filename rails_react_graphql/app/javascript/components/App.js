@@ -9,6 +9,7 @@ class App extends Component {
       <ApolloProvider client={client}>
         <div>
           <header>Add Header Here</header>
+          Here is the workout component
           <WorkoutComponent />
         </div>
       </ApolloProvider>
