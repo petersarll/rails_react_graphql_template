@@ -12,7 +12,7 @@ function WorkoutList({ onDogSelected }) {
     <ul name="dog" onChange={onDogSelected}>
       {data.allWorkouts.map(workout => (
         <li key={workout.id} value={workout.exerciseName}>
-          {workout.exerciseName}
+          {workout.exerciseName} | {workout.rest}
         </li>
       ))}
     </ul>
