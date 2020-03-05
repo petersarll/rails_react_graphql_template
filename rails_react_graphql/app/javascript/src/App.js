@@ -9,13 +9,18 @@ import './stylesheets/App.css'
 class App extends Component {
   render() {
     return (
-      <div className="mp-1">
-        <ApolloProvider client={client}>
-          <header className="mp-h1">ReTrain</header>
-          <WorkoutComponent />
-          <WorkoutList />
-        </ApolloProvider>
-      </div>
+      <ApolloProvider client={client}>
+        <div>
+          <header className="mp-1">
+            <div className="mp-2" id="ht"></div>
+            <div className="mp-3"></div>
+            <div className="mp-4" id="ht"></div>
+            {/* <header className="mp-h1">ReTrain</header> */}
+            {/* <WorkoutComponent />
+                    <WorkoutList /> */}
+          </header>
+        </div>
+      </ApolloProvider>
     )
   }
 }

@@ -2,11 +2,6 @@
 
 body {
   width: 100%;
-  background-image: radial-gradient(
-    circle 345px at 0.3% 53.6%,
-    rgba(255, 140, 70, 1) 0%,
-    rgba(255, 63, 63, 1) 100.7%
-  );
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -26,19 +21,41 @@ html {
   border-style: solid;
   border-color: lightgray;
   border-width: 1px;
-  border-radius: 0px 0px 20px 20px;
+  border-radius: 0px 0px 0px 0px;
+  border: 0px;
   /*background  */
-  background: white;
-  /* box shadow */
-  -webkit-box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.75);
-  box-shadow: 3px 2px 3px 1px rgba(0, 0, 0, 0.75);
-  /* border */
-  height: 500px;
-  width: 100%;
+  background-color: #ffffff;
+  background-image: linear-gradient(
+    225deg,
+    #ffffff 0%,
+    #08aeea 50%,
+    #2af598 100%
+  );
+  /* CSS Grid */
+  display: grid;
+  grid: repeat(3, 200px) / repeat(10, 1fr);
 }
 
-/* header */
-.mp-h1 {
-  font-size: 2rem;
+#ht {
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  background-image: linear-gradient(225deg, #08aeea 50%, #2af598 100%);
+}
+
+.mp-2 {
+  grid-column: span 3;
+}
+
+.mp-3 {
+  grid-area: 2 / span 3 / auto / -1;
+  background-image: linear-gradient(225deg, #ffffff 10%, #08aeea 50%);
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  height: 400px;
+}
+
+.mp-4 {
+  grid-row: 3;
+  grid-column: span 5;
+  height: 400px;
 }
