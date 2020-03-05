@@ -2,10 +2,9 @@ module Mutations
   class DestroyExercise < ::Mutations::BaseMutation
     # TODO: define return fields
     # field :post, Types::PostType, null: false
-    argument :id, Integer, required: true
     # TODO: define arguments 
-    # type Types::WorkoutType
     # argument :name, String, required: true
+    argument :id, Integer, required: true
     # TODO: define resolve method
     # def resolve(name:)
     #   { post: ... }
