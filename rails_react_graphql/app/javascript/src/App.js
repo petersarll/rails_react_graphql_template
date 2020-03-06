@@ -17,7 +17,15 @@ class App extends Component {
             <div className="mp-3"></div>
             <div className="mp-4" id="ht"></div>
           </header>
-          <button className="btn-grad">Contact</button>
+          <h1> </h1>
+          <div>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </div>
+          <button className="btn-contact">Contact</button>
+          <button className="btn-about">About</button>
           <div className="mp-h1">Retrain</div>
           <img className="laptop" src={Logo} />
           {/* <WorkoutComponent />
