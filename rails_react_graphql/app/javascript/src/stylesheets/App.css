@@ -33,12 +33,12 @@ html {
   );
   /* CSS Grid */
   display: grid;
-  grid: repeat(3, 200px) / repeat(10, 1fr);
+  grid: repeat(4, 200px) / repeat(10, 1fr);
+  transform: skewY(-12deg);
+  transform-origin: 0;
 }
 
 #ht {
-  transform: skewY(-12deg);
-  transform-origin: 0;
   background-image: linear-gradient(225deg, #08aeea 50%, #2af598 100%);
 }
 
@@ -49,13 +49,57 @@ html {
 .mp-3 {
   grid-area: 2 / span 3 / auto / -1;
   background-image: linear-gradient(225deg, #ffffff 10%, #08aeea 50%);
-  transform: skewY(-12deg);
-  transform-origin: 0;
-  height: 400px;
+  height: 200px;
 }
 
 .mp-4 {
   grid-row: 3;
   grid-column: span 5;
-  height: 400px;
+  height: 200px;
+}
+
+.mp-h1 {
+  text-align: center;
+  position: absolute;
+  font-family: 'IBM Plex Sans Condensed', sans-serif;
+  top: 200px;
+  right: 200px;
+  font-size: 3rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: 0.15em; /* Adjust as needed */
+  animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
+  color: white;
+  font-weight: 900;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 15%;
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: #08aeea;
+  }
+}
+
+.laptop {
+  height: 600px;
+  width: 600px;
+  position: absolute;
+  top: 300px;
+  left: 800px;
 }
