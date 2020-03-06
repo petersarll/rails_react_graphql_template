@@ -62,8 +62,9 @@ html {
   text-align: center;
   position: absolute;
   font-family: 'IBM Plex Sans Condensed', sans-serif;
-  top: 200px;
-  right: 200px;
+  z-index: 2;
+  top: 450px;
+  right: 390px;
   font-size: 3rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
@@ -73,6 +74,7 @@ html {
   animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
   color: white;
   font-weight: 900;
+  transform: skewY(-14deg);
 }
 
 /* The typing effect */
@@ -97,9 +99,27 @@ html {
 }
 
 .laptop {
-  height: 600px;
-  width: 600px;
+  height: 700px;
+  width: 700px;
   position: absolute;
-  top: 300px;
+  top: 250px;
   left: 800px;
+  transform: skewY(17deg);
+}
+
+.btn-grad {
+  background-image: linear-gradient(
+    to right,
+    #1fa2ff 0%,
+    #12d8fa 51%,
+    #1fa2ff 100%
+  );
+  height: 100px;
+  width: 200px;
+  border: none;
+  border-radius: 20px 20px 20px 20px;
+}
+
+.btn-grad:hover {
+  background-position: right center;
 }
