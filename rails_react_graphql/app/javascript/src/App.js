@@ -35,8 +35,8 @@ class App extends Component {
           </button>
           <div className="mp-h1">Retrain</div>
           <img className="laptop" src={Logo} />
-          {/* <WorkoutComponent />
-          <WorkoutList /> */}
+          <WorkoutComponent />
+          <WorkoutList />
         </div>
       </ApolloProvider>
     )

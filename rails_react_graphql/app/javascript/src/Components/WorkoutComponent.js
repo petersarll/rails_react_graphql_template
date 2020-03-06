@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import { Mutation } from 'react-apollo'
 import { CREATE_WORKOUT } from '../apollo'
 
+//CSS
+import '../stylesheets/workoutcomponent.css'
+
 class Workout extends Component {
   constructor(props) {
     super(props)
@@ -59,7 +62,7 @@ class Workout extends Component {
       <Mutation mutation={CREATE_WORKOUT}>
         {createWorkout => (
           <div>
-            <h2>Create Workout Form</h2>
+            <h2>Create Exercise</h2>
             <this.showErrors />
             <form
               onSubmit={e => {
