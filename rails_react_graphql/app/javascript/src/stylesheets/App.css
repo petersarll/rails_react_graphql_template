@@ -64,8 +64,8 @@ html {
   position: absolute;
   font-family: 'Rochester', sans-serif;
   z-index: 2;
-  top: 400px;
-  right: 465px;
+  top: 380px;
+  right: 345px;
   font-size: 4rem;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: 0.15em solid orange; /* The typwriter cursor */
@@ -103,22 +103,22 @@ html {
   height: 900px;
   width: 900px;
   position: absolute;
-  top: 150px;
-  left: 640px;
+  top: 130px;
+  left: 760px;
   transform: skewY(18deg);
 }
 
-.btn-contact {
+.btn {
   background: #36e97a;
   color: #ffffff;
   font-size: 1.5em;
   height: 60px;
-  width: 150px;
+  width: 160px;
   border: none;
   border-radius: 10px 10px 10px 10px;
   position: absolute;
-  top: 300px;
-  left: 200px;
+  top: 500px;
+  left: 170px;
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
@@ -126,22 +126,15 @@ html {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.btn-contact:hover {
+#contact:hover {
   background: #ffffff;
   color: #08d657;
 }
 
-.btn-about {
+#about {
   background: #ffffff;
   color: #41bcdf;
-  font-size: 1.5em;
-  height: 60px;
-  width: 150px;
-  border: none;
-  border-radius: 10px 10px 10px 10px;
-  position: absolute;
-  top: 300px;
-  left: 400px;
+  left: 410px;
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
@@ -149,7 +142,20 @@ html {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
-.btn-about:hover {
+#about:hover {
   background: #2bc5ef;
   color: #ffffff;
+}
+
+.p2 {
+  position: absolute;
+  top: 350px;
+  left: 100px;
+  height: 200px;
+  width: 700px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  right: 0px;
 }
