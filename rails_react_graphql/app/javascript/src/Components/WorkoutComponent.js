@@ -62,56 +62,58 @@ class Workout extends Component {
       <Mutation mutation={CREATE_WORKOUT}>
         {createWorkout => (
           <div className="wc-1">
-            <div className="h2">Create Exercise</div>
+            <div className="h2">Create</div>
             <this.showErrors />
-            <form
-              onSubmit={e => {
-                e.preventDefault()
-                this.handleFormSubmit({ createWorkout })
-              }}
-            >
-              <div>
-                <label>Exercise Name</label>
-                <input
-                  type="text"
-                  id="exerciseName"
-                  onChange={this.handleChange}
-                  required
-                />
-              </div>
+            <div className="form-div">
+              <form
+                onSubmit={e => {
+                  e.preventDefault()
+                  this.handleFormSubmit({ createWorkout })
+                }}
+              >
+                <div>
+                  <label>Exercise Name</label>
+                  <input
+                    type="text"
+                    id="exerciseName"
+                    onChange={this.handleChange}
+                    required
+                  />
+                </div>
 
-              <div>
-                <label>Sets</label>
-                <input
-                  type="text"
-                  id="sets"
-                  onChange={this.handleChange}
-                  required
-                />
-              </div>
+                <div>
+                  <label>Sets</label>
+                  <input
+                    type="text"
+                    id="sets"
+                    onChange={this.handleChange}
+                    required
+                  />
+                </div>
 
-              <div>
-                <label>Reps</label>
-                <input
-                  type="text"
-                  id="reps"
-                  onChange={this.handleChange}
-                  required
-                />
-              </div>
+                <div>
+                  <label>Reps</label>
+                  <input
+                    type="text"
+                    id="reps"
+                    onChange={this.handleChange}
+                    required
+                  />
+                </div>
 
-              <div>
-                <label>Rest</label>
-                <input
-                  rows="10"
-                  cols="60"
-                  id="rest"
-                  onChange={this.handleChange}
-                  required
-                />
-              </div>
-              <button type="submit">SUBMIT</button>
-            </form>
+                <div>
+                  <label>Rest</label>
+                  <input
+                    rows="10"
+                    cols="60"
+                    id="rest"
+                    onChange={this.handleChange}
+                    required
+                  />
+                </div>
+                <button type="submit">SUBMIT</button>
+              </form>
+            </div>
           </div>
         )}
       </Mutation>

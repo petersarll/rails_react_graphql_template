@@ -3,12 +3,13 @@
 .wc-1 {
   /* CSS Grid */
   display: grid;
-  grid: repeat(4, 200px) / repeat(10, 1fr);
+  grid: repeat(5, 200px) / repeat(10, 1fr);
+  justify-items: center;
 }
 
 .h2 {
   position: center;
-  grid-column-start: 4;
+  grid-column-start: 5;
   grid-column-end: 7;
   grid-row-start: 2;
   font-family: 'Montserrat', sans-serif;
@@ -16,4 +17,9 @@
   font-size: 3rem;
   color: #000000;
   right: 0px;
+}
+
+.form-div {
+  grid-column-start: 2;
+  grid-row-start: 3;
 }
