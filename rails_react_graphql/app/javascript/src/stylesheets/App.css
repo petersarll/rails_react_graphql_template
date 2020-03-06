@@ -75,7 +75,7 @@ html {
   animation: typing 1.5s steps(40, end), blink-caret 0.75s step-end infinite;
   color: white;
   font-weight: 900;
-  transform: skewY(-13deg);
+  transform: skewY(-12deg);
 }
 
 /* The typing effect */
@@ -152,7 +152,7 @@ html {
   top: 300px;
   left: 100px;
   height: 200px;
-  width: 700px;
+  width: 600px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
@@ -162,7 +162,7 @@ html {
 
 .h1 {
   position: absolute;
-  top: 150px;
+  top: 170px;
   left: 100px;
   height: 200px;
   width: 1200px;
