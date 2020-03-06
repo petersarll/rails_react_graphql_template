@@ -31,7 +31,7 @@ class App extends Component {
             Contact
           </button>
           <button className="btn" id="about">
-            About
+            Try Now
           </button>
           <div className="mp-h1">Retrain</div>
           <img className="laptop" src={Logo} />

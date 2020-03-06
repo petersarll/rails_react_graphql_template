@@ -124,6 +124,7 @@ html {
   -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+  outline: none;
 }
 
 #contact:hover {
@@ -134,7 +135,7 @@ html {
 #about {
   background: #ffffff;
   color: #41bcdf;
-  left: 360px;
+  left: 330px;
   -webkit-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),
     0 1px 3px rgba(0, 0, 0, 0.08);
   -moz-box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11),

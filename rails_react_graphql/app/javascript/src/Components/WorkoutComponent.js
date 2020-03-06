@@ -61,8 +61,8 @@ class Workout extends Component {
     return (
       <Mutation mutation={CREATE_WORKOUT}>
         {createWorkout => (
-          <div>
-            <h2>Create Exercise</h2>
+          <div className="wc-1">
+            <div className="h2">Create Exercise</div>
             <this.showErrors />
             <form
               onSubmit={e => {
