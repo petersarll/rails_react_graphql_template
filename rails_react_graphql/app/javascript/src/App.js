@@ -40,10 +40,12 @@ class App extends Component {
             <div className="mp-h1">Retrain</div>
             <img className="laptop" src={Logo} />
             <div id="trynow"></div>
-            <WorkoutComponent />
-            <WorkoutList />
-            <div id="contactnow"></div>
           </div>
+          <WorkoutComponent />
+          <div className="mp-grey">
+            <WorkoutList />
+          </div>
+          <div id="contactnow"></div>
         </Router>
       </ApolloProvider>
     )
