@@ -3,10 +3,11 @@ import { ApolloProvider } from 'react-apollo'
 import { client } from './apollo'
 import WorkoutComponent from './Components/WorkoutComponent'
 import WorkoutList from './Components/WorkoutList'
-import Logo from './mockup.svg'
 import { HashLink as Link } from 'react-router-hash-link'
 import { BrowserRouter as Router } from 'react-router-dom'
 
+import Logo from './mockup.svg'
+import Ipad from './ipad.svg'
 import './stylesheets/App.css'
 
 class App extends Component {
@@ -41,6 +42,7 @@ class App extends Component {
             <img className="laptop" src={Logo} />
             <div id="trynow"></div>
           </div>
+          <img className="ipad" src={Ipad} />
           <WorkoutComponent />
           <div className="mp-grey">
             <WorkoutList />
