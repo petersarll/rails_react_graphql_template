@@ -31,17 +31,18 @@ class App extends Component {
               nisi ut aliquip ex ea commodo consequat. labore et dolore magna
               aliqua.
             </div>
-            <button className="btn" id="contact">
-              Contact
-            </button>
+            <Link className="btn" id="contact" to="#contactnow">
+              <div className="btn-txt">Contact</div>
+            </Link>
             <Link className="btn" id="about" to="#trynow">
-              Try Now
+              <div className="btn-txt">Try Now</div>
             </Link>
             <div className="mp-h1">Retrain</div>
             <img className="laptop" src={Logo} />
             <div id="trynow"></div>
             <WorkoutComponent />
             <WorkoutList />
+            <div id="contactnow"></div>
           </div>
         </Router>
       </ApolloProvider>

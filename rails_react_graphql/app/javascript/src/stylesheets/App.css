@@ -125,6 +125,16 @@ html {
     0 1px 3px rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   outline: none;
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.btn-txt {
+  position: absolute;
+  right: 33px;
+  bottom: 18px;
+  font-weight: bold;
 }
 
 #contact:hover {
@@ -172,4 +182,9 @@ html {
   font-size: 2rem;
   color: #ffffff;
   right: 0px;
+}
+
+#trynow {
+  position: absolute;
+  top: 1000px;
 }

@@ -3,23 +3,28 @@
 .wc-1 {
   /* CSS Grid */
   display: grid;
-  grid: repeat(5, 200px) / repeat(10, 1fr);
+  grid: repeat(6, 200px) / repeat(10, 1fr);
   justify-items: center;
+  transform: skewY(-12deg);
+  transform-origin: 0;
+  border-bottom: 1px solid lightgray;
 }
 
 .h2 {
   position: center;
   grid-column-start: 5;
   grid-column-end: 7;
-  grid-row-start: 2;
+  grid-row-start: 3;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   font-size: 3rem;
   color: #000000;
   right: 0px;
+  transform: skewY(12deg);
+  transform-origin: 0;
 }
 
 .form-div {
   grid-column-start: 2;
-  grid-row-start: 3;
+  grid-row-start: 4;
 }
