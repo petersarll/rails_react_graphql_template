@@ -10,6 +10,9 @@ import Logo from './mockup.svg'
 import Ipad from './ipad.svg'
 import './stylesheets/App.css'
 
+import 'animate.css/animate.min.css'
+import ScrollAnimation from 'react-animate-on-scroll'
+
 class App extends Component {
   render() {
     return (
@@ -22,15 +25,19 @@ class App extends Component {
               <div className="mp-4" id="ht"></div>
             </header>
             <div className="h1">
-              Nunc mattis enim ut tellus. At elementum eu facilisis sed odio
-              morbi.
+              <ScrollAnimation animateIn="fadeIn">
+                Nunc mattis enim ut tellus. At elementum eu facilisis sed odio
+                morbi.
+              </ScrollAnimation>
             </div>
             <div className="p2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. labore et dolore magna
-              aliqua.
+              <ScrollAnimation animateIn="fadeIn">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. labore et dolore magna
+                aliqua.
+              </ScrollAnimation>
             </div>
             <Link className="btn" id="contact" to="#contactnow">
               <div className="btn-txt">Contact</div>
