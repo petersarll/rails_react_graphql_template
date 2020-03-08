@@ -97,4 +97,10 @@
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
+  font-weight: bold;
+}
+
+.sbmt-btn:hover {
+  color: #ffffff;
+  background: #08d657;
 }
