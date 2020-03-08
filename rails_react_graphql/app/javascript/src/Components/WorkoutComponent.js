@@ -69,7 +69,7 @@ class Workout extends Component {
             </div>
             <this.showErrors />
             <div className="form-div">
-              <h1>Try Me Now</h1>
+              <div className="form-header">Try Me Now</div>
               <form
                 onSubmit={e => {
                   e.preventDefault()
@@ -78,7 +78,10 @@ class Workout extends Component {
               >
                 <div>
                   <label>Exercise Name</label>
+                  <br />
                   <input
+                    className="frm-input"
+                    placeholder="type in an exercise"
                     type="text"
                     id="exerciseName"
                     onChange={this.handleChange}
@@ -88,7 +91,10 @@ class Workout extends Component {
 
                 <div>
                   <label>Sets</label>
+                  <br />
                   <input
+                    className="frm-input"
+                    placeholder="type the amount of sets"
                     type="text"
                     id="sets"
                     onChange={this.handleChange}
@@ -98,7 +104,10 @@ class Workout extends Component {
 
                 <div>
                   <label>Reps</label>
+                  <br />
                   <input
+                    className="frm-input"
+                    placeholder="type in the amount of reps"
                     type="text"
                     id="reps"
                     onChange={this.handleChange}
@@ -108,7 +117,10 @@ class Workout extends Component {
 
                 <div>
                   <label>Rest</label>
+                  <br />
                   <input
+                    className="frm-input"
+                    placeholder="type in the length of rest"
                     rows="10"
                     cols="60"
                     id="rest"
