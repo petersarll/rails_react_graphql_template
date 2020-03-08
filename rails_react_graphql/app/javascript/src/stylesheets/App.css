@@ -203,7 +203,10 @@ html {
 }
 
 .contact-div {
-  background-color: black;
-  height: 200px;
-  width: 200px;
+  background-color: white;
+  /* CSS Grid */
+  display: grid;
+  grid: repeat(4, 200px) / repeat(10, 1fr);
+  transform: skewY(12deg);
+  transform-origin: 0;
 }
