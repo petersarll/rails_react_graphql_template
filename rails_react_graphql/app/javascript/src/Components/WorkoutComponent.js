@@ -128,7 +128,9 @@ class Workout extends Component {
                     required
                   />
                 </div>
-                <button type="submit">SUBMIT</button>
+                <button className="sbmt-btn" type="submit">
+                  SUBMIT
+                </button>
               </form>
             </div>
           </div>
