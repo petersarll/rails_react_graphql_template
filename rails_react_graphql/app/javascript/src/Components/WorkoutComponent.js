@@ -128,9 +128,14 @@ class Workout extends Component {
                     required
                   />
                 </div>
-                <button className="sbmt-btn" type="submit">
-                  SUBMIT
-                </button>
+                <ScrollAnimation
+                  animateIn="bounceInRight"
+                  animateOut="bounceOutLeft"
+                >
+                  <button className="sbmt-btn" type="submit">
+                    SUBMIT
+                  </button>
+                </ScrollAnimation>
               </form>
             </div>
           </div>
