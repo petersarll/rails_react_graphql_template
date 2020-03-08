@@ -207,7 +207,6 @@ html {
   /* CSS Grid */
   display: grid;
   grid: repeat(4, 200px) / repeat(10, 1fr);
-  transform: skewY(12deg);
   transform-origin: 0;
 }
 
