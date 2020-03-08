@@ -114,7 +114,7 @@ html {
 
 .ipad {
   position: absolute;
-  top: 1150px;
+  top: 1025px;
   left: 500px;
   width: 1200px;
   height: auto;
@@ -209,4 +209,15 @@ html {
   grid: repeat(4, 200px) / repeat(10, 1fr);
   transform: skewY(12deg);
   transform-origin: 0;
+}
+
+.circle-div {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  background-color: #78eea5;
+  transform: skewY(-12deg);
+  position: absolute;
+  left: 740px;
+  top: -50px;
 }

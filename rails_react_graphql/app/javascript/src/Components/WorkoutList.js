@@ -21,7 +21,7 @@ function WorkoutList({ onDogSelected }) {
           ))}
         </ul>
       </div>
-      <div className="circle-div"></div>
+      <div className="circle-div" id="circle-div"></div>
     </div>
   )
 }

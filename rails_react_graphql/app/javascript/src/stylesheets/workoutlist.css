@@ -24,14 +24,3 @@ ul {
   list-style-type: none;
   transform: skewY(-12deg);
 }
-
-.circle-div {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  background-color: #78eea5;
-  transform: skewY(-12deg);
-  position: absolute;
-  left: 740px;
-  top: -50px;
-}
