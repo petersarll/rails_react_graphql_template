@@ -220,3 +220,7 @@ html {
   left: 740px;
   top: -50px;
 }
+
+.circle-div:hover {
+  background-color: #2bc5ef;
+}
