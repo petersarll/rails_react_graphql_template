@@ -114,11 +114,11 @@ html {
 
 .ipad {
   position: absolute;
-  top: 1200px;
+  top: 1150px;
   left: 500px;
   width: 1200px;
   height: auto;
-  z-index: 3;
+  z-index: auto;
 }
 
 .btn {

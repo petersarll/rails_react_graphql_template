@@ -49,11 +49,10 @@ class App extends Component {
             <img className="laptop" src={Logo} />
             <div id="trynow"></div>
           </div>
-          <img className="ipad" src={Ipad} />
           <WorkoutComponent />
-          <div className="mp-grey">
-            <WorkoutList />
-          </div>
+          <WorkoutList />
+          <img className="ipad" src={Ipad} />
+          <div className="mp-grey"></div>
           <div id="contactnow"></div>
         </Router>
       </ApolloProvider>

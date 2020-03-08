@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { Mutation } from 'react-apollo'
 import { CREATE_WORKOUT } from '../apollo'
+import ScrollAnimation from 'react-animate-on-scroll'
 
 //CSS
 import '../stylesheets/workoutcomponent.css'
+import 'animate.css/animate.min.css'
 
 class Workout extends Component {
   constructor(props) {
@@ -62,9 +64,12 @@ class Workout extends Component {
       <Mutation mutation={CREATE_WORKOUT}>
         {createWorkout => (
           <div className="wc-1">
-            <div className="h2">Create</div>
+            <div className="h2">
+              <ScrollAnimation animateIn="fadeIn">Create</ScrollAnimation>
+            </div>
             <this.showErrors />
             <div className="form-div">
+              <h1>Try Me Now</h1>
               <form
                 onSubmit={e => {
                   e.preventDefault()

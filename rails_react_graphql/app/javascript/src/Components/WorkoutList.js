@@ -12,13 +12,15 @@ function WorkoutList({ onDogSelected }) {
 
   return (
     <div className="wl-1">
-      <ul name="dog" onChange={onDogSelected}>
-        {data.allWorkouts.map(workout => (
-          <li key={workout.id} value={workout.exerciseName}>
-            {workout.exerciseName} | {workout.rest}
-          </li>
-        ))}
-      </ul>
+      <div className="tablet-screen">
+        <ul name="dog" onChange={onDogSelected}>
+          {data.allWorkouts.map(workout => (
+            <li key={workout.id} value={workout.exerciseName}>
+              {workout.exerciseName} | {workout.rest}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   )
 }

@@ -7,7 +7,8 @@
   justify-items: center;
   transform: skewY(-12deg);
   transform-origin: 0;
-  border-bottom: 1px solid lightgray;
+  position: relative;
+  z-index: 0;
 }
 
 .h2 {
@@ -27,4 +28,20 @@
 .form-div {
   grid-column-start: 2;
   grid-row-start: 4;
+  transform: skewY(12deg);
+  border-color: lightgray;
+  border-style: solid;
+  border-width: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.68531162464986) 0%,
+    rgb(245, 245, 245) 50%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  width: 400px;
+  height: 300px;
+  border-radius: 5% 5% 5% 5%;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.38);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
 }
