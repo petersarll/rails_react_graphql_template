@@ -52,8 +52,7 @@ class App extends Component {
           <WorkoutComponent />
           <WorkoutList />
           <img className="ipad" src={Ipad} />
-          <div className="mp-grey"></div>
-          <div id="contactnow"></div>
+          <div className="contact-div" id="contactnow"></div>
         </Router>
       </ApolloProvider>
     )
