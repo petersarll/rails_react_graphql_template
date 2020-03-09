@@ -16,7 +16,8 @@ function WorkoutList({ onDogSelected }) {
         <ul name="dog" onChange={onDogSelected}>
           {data.allWorkouts.map(workout => (
             <li key={workout.id} value={workout.exerciseName}>
-              {workout.exerciseName} | {workout.rest}
+              {workout.exerciseName} | {workout.rest} |{' '}
+              <button className="rmve-btn"> X </button>
             </li>
           ))}
         </ul>
