@@ -46,6 +46,7 @@ export const GET_ALL_WORKOUTS = gql`
     allWorkouts {
       exerciseName
       rest
+      id
     }
   }
 `

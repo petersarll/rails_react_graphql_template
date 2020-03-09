@@ -9,7 +9,6 @@ function WorkoutList({ onDogSelected }) {
 
   if (loading) return 'Loading...'
   if (error) return `Error! ${error.message}`
-
   return (
     <div className="wl-1">
       <div className="tablet-screen">
@@ -23,7 +22,9 @@ function WorkoutList({ onDogSelected }) {
               <div className="exc-div">{workout.exerciseName}</div>
               <div className="rst-div">{workout.rest}</div>
               <div className="btn-div">
-                <button className="rmve-btn"> X </button>
+                <button className="rmve-btn" key={workout.id}>
+                  X
+                </button>
               </div>
             </li>
           ))}
