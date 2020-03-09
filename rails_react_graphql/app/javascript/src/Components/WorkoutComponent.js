@@ -36,6 +36,7 @@ class Workout extends Component {
         alert('Book Details Updated successfully')
         const { data } = response
         console.log(data)
+        window.location.reload(false)
       })
       .catch(e => {
         let messages = JSON.parse(e.graphQLErrors[0].message)
