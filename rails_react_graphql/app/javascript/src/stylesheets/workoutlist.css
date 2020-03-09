@@ -14,7 +14,7 @@
   font-family: 'Montserrat', sans-serif;
   position: absolute;
   top: -675px;
-  right: 150px;
+  right: -45px;
   color: black;
   z-index: 3;
 }
@@ -26,7 +26,9 @@ ul {
 }
 
 .exc-ind-lst {
-  margin-bottom: 5px;
+  margin-bottom: 15px;
+  display: grid;
+  grid: repeat(1, 20px) / repeat(3, 150px);
 }
 
 .rmve-btn {
@@ -41,10 +43,12 @@ ul {
     0 1px 3px rgba(0, 0, 0, 0.08);
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
   outline: none;
+  font-weight: bold;
 }
 
 .rmve-btn:hover {
-  animation: shake 0.2s;
+  animation: shake 0.1s;
+  background-color: red;
 }
 
 @keyframes shake {

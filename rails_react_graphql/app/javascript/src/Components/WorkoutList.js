@@ -20,8 +20,11 @@ function WorkoutList({ onDogSelected }) {
               key={workout.id}
               value={workout.exerciseName}
             >
-              {workout.exerciseName} | {workout.rest} |{' '}
-              <button className="rmve-btn"> X </button>
+              <div className="exc-div">{workout.exerciseName}</div>
+              <div className="rst-div">{workout.rest}</div>
+              <div className="btn-div">
+                <button className="rmve-btn"> X </button>
+              </div>
             </li>
           ))}
         </ul>
