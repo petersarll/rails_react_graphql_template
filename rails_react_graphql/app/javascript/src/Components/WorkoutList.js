@@ -32,7 +32,8 @@ function WorkoutList({ onDogSelected }) {
         </ul>
       </div>
       <div className="circle-div" id="circle-div"></div>
-      <img className="phone" src={Phone} />
+      <div className="contact" id="contact-div"></div>
+      <img className="phone" id="phone" src={Phone} />
     </div>
   )
 }

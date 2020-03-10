@@ -39,7 +39,7 @@ class App extends Component {
                 aliqua.
               </ScrollAnimation>
             </div>
-            <Link className="btn" id="contact" to="#circle-div">
+            <Link className="btn" id="contact" to="#contact-div">
               <div className="btn-txt">Contact</div>
             </Link>
             <Link className="btn" id="about" to="#trynow">
