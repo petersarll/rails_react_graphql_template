@@ -6,8 +6,8 @@ import WorkoutList from './Components/WorkoutList'
 import { HashLink as Link } from 'react-router-hash-link'
 import { BrowserRouter as Router } from 'react-router-dom'
 
-import Laptop from './mockup.svg'
-import Ipad from './ipad.svg'
+import Laptop from './svg/mockup.svg'
+import Ipad from './svg/ipad.svg'
 import './stylesheets/App.css'
 
 import 'animate.css/animate.min.css'
@@ -48,6 +48,15 @@ class App extends Component {
             <div className="mp-h1">Retrain</div>
             <img className="laptop" src={Laptop} />
             <div id="trynow"></div>
+          </div>
+          <div className="trynow-summary-cntnr">
+            <div className="trynow-summary">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. labore et dolore magna
+              aliqua.
+            </div>
           </div>
           <WorkoutComponent />
           <WorkoutList />

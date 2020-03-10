@@ -86,3 +86,9 @@ ul {
     transform: translate(1px, -2px) rotate(-1deg);
   }
 }
+
+.phone {
+  transform: skewY(-12deg);
+  width: 1200px;
+  height: auto;
+}

@@ -3,6 +3,7 @@ import { useQuery } from '@apollo/react-hooks'
 import { GET_ALL_WORKOUTS } from '../apollo'
 
 import '../stylesheets/workoutlist.css'
+import Phone from '../svg/phone.svg'
 
 function WorkoutList({ onDogSelected }) {
   const { loading, error, data } = useQuery(GET_ALL_WORKOUTS)
@@ -31,6 +32,7 @@ function WorkoutList({ onDogSelected }) {
         </ul>
       </div>
       <div className="circle-div" id="circle-div"></div>
+      <img className="phone" src={Phone} />
     </div>
   )
 }

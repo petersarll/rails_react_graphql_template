@@ -202,6 +202,27 @@ html {
   top: 1000px;
 }
 
+.trynow-summary-cntnr {
+  color: rgb(145, 145, 145);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 1.1rem;
+  position: absolute;
+  top: 1200px;
+  left: 600px;
+  height: 300px;
+  width: 480px;
+  border-radius: 5px 5px 5px 5px;
+  padding: 20px;
+}
+
+.trynow-summary {
+  position: absolute;
+  top: 25%;
+  text-align: center;
+  width: 400px;
+}
+
 .contact-div {
   background-color: white;
   /* CSS Grid */
