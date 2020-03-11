@@ -14,6 +14,11 @@ import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 class App extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
   render() {
     return (
       <ApolloProvider client={client}>
