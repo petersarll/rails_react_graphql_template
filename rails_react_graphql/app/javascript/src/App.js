@@ -70,7 +70,6 @@ class App extends Component {
   // }
 
   render() {
-    console.log(this.state.list)
     return (
       <ApolloProvider client={client}>
         <Router>
