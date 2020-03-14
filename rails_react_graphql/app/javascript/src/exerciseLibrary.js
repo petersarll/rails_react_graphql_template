@@ -1,4 +1,4 @@
-export const jobs = [
+export const Exercises = [
   {
     exerciseName: 'Bodyweight Squat',
     id: '1',

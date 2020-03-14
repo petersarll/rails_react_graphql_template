@@ -14,13 +14,13 @@ import './stylesheets/App.css'
 import 'animate.css/animate.min.css'
 import ScrollAnimation from 'react-animate-on-scroll'
 
-import { jobs } from './exerciseLibrary.js'
+import { Exercises } from './exerciseLibrary.js'
 
 class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      list: jobs
+      list: Exercises
     }
     // this.addItem = this.addItem.bind(this)
     // this.removeItem = this.removeItem.bind(this)

@@ -17,11 +17,11 @@ class List extends React.Component {
     })
   }
 
-  componentWllReceiveProps(nextProps) {
-    this.setState({
-      filtered: nextPrs.items
-    })
-  }
+  //   componentWllReceiveProps(nextProps) {
+  //     this.setState({
+  //       filtered: nextProps.items
+  //     })
+  //   }
 
   handleChange(e) {
     // Variable to hold the original version of the list
@@ -40,23 +40,17 @@ class List extends React.Component {
         // change search term to lowercase
         const filter = e.target.value.toLowerCase()
         // check to see if the current list item includes the search term
-        // If it does, it will be added to newList. Using lowercase eliminates
-        // issues with capitalization in search terms and search content
-        //return lc.includes(filter)
+        // If it does, it will be added to newList.
         return lc.includes(filter)
       })
     } else {
       // If the search bar is empty, set newList to original task list
-      //   newList = this.props.items.map(exercise => {
-      //     return exercise.exerciseName
-      //   })
       newList = this.props.items
     }
     // Set the filtered state based on what our rules added to newList
     this.setState({
       filtered: newList
     })
-    console.log(newList)
   }
 
   render() {
