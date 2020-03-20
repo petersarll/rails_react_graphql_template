@@ -6,6 +6,7 @@ class List extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
+      list: [],
       filtered: []
     }
     this.handleChange = this.handleChange.bind(this)
@@ -18,37 +19,36 @@ class List extends React.Component {
     })
   }
 
-  //   componentWllReceiveProps(nextProps) {
-  //     this.setState({
-  //       filtered: nextProps.items
-  //     })
-  //   }
+  componentWllReceiveProps(nextProps) {
+    this.setState({
+      filtered: nextProps.items
+    })
+  }
 
   addItem(e) {
     // // Prevent button click from submitting form
     e.preventDefault()
 
     // // Create variables for our list, the item to add, and our form
-    // let list = Sample
+    let list = Sample
     const newItem = document.getElementById('addInput')
-    // const form = document.getElementById('addItemForm')
+    const form = document.getElementById('addItemForm')
 
-    // // If our input has a value
-    // if (newItem.value != '') {
-    //   // Add the new item to the end of our list array
-    //   list.push(newItem.value)
-    //   // Then we use that to set the state for list
-    //   this.setState({
-    //     list: list
-    //   })
-    //   // Finally, we need to reset the form
-    //   newItem.classList.remove('is-danger')
-    //   form.reset()
-    // } else {
-    //   // If the input doesn't have a value, make the border red since it's required
-    //   newItem.classList.add('is-danger')
-    // }
-    return <div>{newItem}</div>
+    // If our input has a value
+    if (newItem.value != '') {
+      // Add the new item to the end of our list array
+      list.push(newItem.value)
+      // Then we use that to set the state for list
+      this.setState({
+        list: list
+      })
+      // Finally, we need to reset the form
+      newItem.classList.remove('is-danger')
+      form.reset()
+    } else {
+      // If the input doesn't have a value, make the border red since it's required
+      newItem.classList.add('is-danger')
+    }
   }
 
   handleChange(e) {

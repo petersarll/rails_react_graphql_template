@@ -24,6 +24,7 @@ class App extends Component {
       list: Exercises
     }
     // this.removeItem = this.removeItem.bind(this)
+    this.addItem = this.addItem.bind(this)
   }
 
   // removeItem(item) {
