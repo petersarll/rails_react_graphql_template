@@ -8,8 +8,8 @@ import { HashLink as Link } from 'react-router-hash-link'
 import { BrowserRouter as Router } from 'react-router-dom'
 
 //SVG images
-import Laptop from './svg/mockup.svg'
-import Ipad from './svg/ipad.svg'
+// import Laptop from './svg/mockup.svg'
+// import Ipad from './svg/ipad.svg'
 import './stylesheets/App.css'
 
 import 'animate.css/animate.min.css'
@@ -21,28 +21,54 @@ class App extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      newList: [],
       list: Exercises
     }
-    // this.removeItem = this.removeItem.bind(this)
+    this.removeItem = this.removeItem.bind(this)
     this.addItem = this.addItem.bind(this)
   }
+  addItem(e) {
+    // // Prevent button click from submitting form
+    e.preventDefault()
 
-  // removeItem(item) {
-  //   // Put our list into an array
-  //   const list = this.state.list.slice()
-  //   // Check to see if item passed in matches item in array
-  //   list.some((el, i) => {
-  //     if (el === item) {
-  //       // If item matches, remove it from array
-  //       list.splice(i, 1)
-  //       return true
-  //     }
-  //   })
-  //   // Set state to list
-  //   this.setState({
-  //     list: list
-  //   })
-  // }
+    // // Create variables for our list, the item to add, and our form
+    let newList = this.state.newList
+    const newItem = document.getElementById('addInput')
+    const form = document.getElementById('addItemForm')
+
+    // If our input has a value
+    if (newItem.value != '') {
+      // Add the new item to the end of our list array
+      newList.push(newItem.value)
+      // Then we use that to set the state for list
+      this.setState({
+        newList: newList
+      })
+      // Finally, we need to reset the form
+      newItem.classList.remove('is-danger')
+      form.reset()
+    } else {
+      // If the input doesn't have a value, make the border red since it's required
+      newItem.classList.add('is-danger')
+    }
+    console.log(this.state.newList)
+  }
+  removeItem(item) {
+    // Put our list into an array
+    const list = this.state.list.slice()
+    // Check to see if item passed in matches item in array
+    list.some((el, i) => {
+      if (el === item) {
+        // If item matches, remove it from array
+        list.splice(i, 1)
+        return true
+      }
+    })
+    // Set state to list
+    this.setState({
+      list: list
+    })
+  }
 
   render() {
     return (
@@ -76,7 +102,7 @@ class App extends Component {
               <div className="btn-txt">Try Now</div>
             </Link>
             <div className="mp-h1">Retrain</div>
-            <img className="laptop" src={Laptop} />
+            {/* <img className="laptop" src={Laptop} /> */}
             <div id="trynow"></div>
           </div>
           <div className="trynow-summary-cntnr">
@@ -90,11 +116,29 @@ class App extends Component {
           </div>
           <WorkoutComponent />
           <WorkoutList />
-          <img className="ipad" src={Ipad} />
+          {/* <img className="ipad" src={Ipad} /> */}
           {/* adding exercise */}
           <div className="content">
             <div className="container">
               <section className="section">
+                <section className="section">
+                  <form className="form" id="addItemForm">
+                    <input
+                      type="text"
+                      className="input"
+                      id="addInput"
+                      placeholder="Something that needs to be done..."
+                    />
+                    <button className="button is-info" onClick={this.addItem}>
+                      Add Item
+                    </button>
+                  </form>
+                </section>
+                <div>
+                  {this.state.newList.map(item => (
+                    <div key="">{item}</div>
+                  ))}
+                </div>
                 <List items={this.state.list} delete={this.removeItem} />
               </section>
               <hr />

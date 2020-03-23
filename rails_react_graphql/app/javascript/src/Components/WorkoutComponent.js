@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Mutation } from 'react-apollo'
-import { CREATE_WORKOUT } from '../apollo'
+import { CREATE_WORKOUT, DESTROY_WORKOUT } from '../apollo'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 //CSS
@@ -62,7 +62,7 @@ class Workout extends Component {
   }
   render() {
     return (
-      <Mutation mutation={CREATE_WORKOUT}>
+      <Mutation mutations={CREATE_WORKOUT}>
         {createWorkout => (
           <div className="wc-1">
             <div className="h2">
