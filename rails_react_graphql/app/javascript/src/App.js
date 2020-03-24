@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { ApolloProvider } from 'react-apollo'
 import { client } from './apollo'
-import WorkoutComponent from './Components/WorkoutComponent'
+import AddWorkoutComponent from './Components/AddWorkoutComponent'
 import WorkoutList from './Components/WorkoutList'
 import List from './Components/List'
 import { HashLink as Link } from 'react-router-hash-link'
@@ -114,7 +114,7 @@ class App extends Component {
               aliqua.
             </div>
           </div>
-          <WorkoutComponent />
+          <AddWorkoutComponent />
           <WorkoutList />
           {/* <img className="ipad" src={Ipad} /> */}
           {/* adding exercise */}

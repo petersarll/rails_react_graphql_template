@@ -62,7 +62,7 @@ class Workout extends Component {
   }
   render() {
     return (
-      <Mutation mutations={CREATE_WORKOUT}>
+      <Mutation mutation={CREATE_WORKOUT}>
         {createWorkout => (
           <div className="wc-1">
             <div className="h2">
