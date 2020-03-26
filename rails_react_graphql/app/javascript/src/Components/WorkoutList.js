@@ -1,5 +1,5 @@
 import React from 'react'
-import { useQuery, useMutation } from '@apollo/react-hooks'
+import { useQuery } from '@apollo/react-hooks'
 import { GET_ALL_WORKOUTS } from '../apollo'
 
 import '../stylesheets/workoutlist.css'

@@ -6,6 +6,7 @@ import WorkoutList from './Components/WorkoutList'
 import List from './Components/List'
 import { HashLink as Link } from 'react-router-hash-link'
 import { BrowserRouter as Router } from 'react-router-dom'
+import DeleteWorkout from './Components/DeleteWorkoutComponent'
 
 //SVG images
 // import Laptop from './svg/mockup.svg'
@@ -141,6 +142,7 @@ class App extends Component {
                 </div>
                 <List items={this.state.list} delete={this.removeItem} />
               </section>
+              <DeleteWorkout />
               <hr />
             </div>
           </div>
