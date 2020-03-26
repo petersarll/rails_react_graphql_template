@@ -30,15 +30,9 @@ export const CREATE_WORKOUT = gql`
     }
   }
 `
-export const DESTROY_WORKOUT = `gql
-  mutation DestroyExercise(
-    $id: id!
-  ) {
-    destroyExercise(
-      input: {
-        id: $id
-      }
-    ) {
+export const DESTROY_WORKOUT = gql`
+  mutation DestroyExercise($id: id!) {
+    destroyExercise(input: { id: $id }) {
       workout {
         id
         exerciseName

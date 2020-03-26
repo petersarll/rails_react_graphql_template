@@ -123,6 +123,7 @@ class App extends Component {
             <div className="container">
               <section className="section">
                 <section className="section">
+                  <DeleteWorkout />
                   <form className="form" id="addItemForm">
                     <input
                       type="text"
@@ -142,7 +143,6 @@ class App extends Component {
                 </div>
                 <List items={this.state.list} delete={this.removeItem} />
               </section>
-              <DeleteWorkout />
               <hr />
             </div>
           </div>

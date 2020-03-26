@@ -1,22 +1,23 @@
 import React, { Component } from 'react'
-import { DESTROY_WORKOUT } from '../apollo'
+// import { DESTROY_WORKOUT } from '../apollo'
 import { Mutation } from 'react-apollo'
+import { DESTROY_WORKOUT } from '../apollo'
 
 class DeleteWorkout extends Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     this.state = {
-      id: 18,
+      id: 12,
       errors: []
     }
   }
 
   handleFormSubmit = props => {
-    let { destroyWorkout } = props
+    let { destroyExercise } = props
     let { id } = this.state
 
     console.log(id)
-    destroyWorkout({
+    destroyExercise({
       variables: {
         id: id
       }
@@ -27,22 +28,22 @@ class DeleteWorkout extends Component {
         console.log(data)
         window.location.reload(true)
       })
-      .catch(e => {
-        let messages = JSON.parse(e.graphQLErrors[0].message)
-        this.setState({
-          errors: messages.errors
-        })
-      })
+      .catch(console.log('youre encountering an error'))
+    //   .catch(e => {
+    //     let messages = JSON.parse(e.graphQLErrors[0].message)
+    //     this.setState({
+    //       errors: messages.errors
+    //     })
+    //   })
   }
 
   render() {
     return (
       <Mutation mutation={DESTROY_WORKOUT}>
-        {destroyWorkout => (
+        {destroyExercise => (
           <div>
-            <button onClick={this.handleFormSubmit({ destroyWorkout })}>
-              {' '}
-              click me to delete number 18{' '}
+            <button onClick={this.handleFormSubmit({ destroyExercise })}>
+              click me to delete number 18
             </button>
           </div>
         )}
