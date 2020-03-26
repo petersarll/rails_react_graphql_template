@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Mutation } from 'react-apollo'
-import { CREATE_WORKOUT, DESTROY_WORKOUT } from '../apollo'
+import { CREATE_WORKOUT } from '../apollo'
 import ScrollAnimation from 'react-animate-on-scroll'
 
 //CSS

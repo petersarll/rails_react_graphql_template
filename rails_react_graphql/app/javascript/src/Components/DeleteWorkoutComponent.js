@@ -37,7 +37,7 @@ class DeleteWorkout extends Component {
 
   render() {
     return (
-      <Mutation>
+      <Mutation mutation={DESTROY_WORKOUT}>
         {destroyWorkout => (
           <div>
             <button onClick={this.handleFormSubmit({ destroyWorkout })}>
