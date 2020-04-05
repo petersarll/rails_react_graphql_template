@@ -31,15 +31,23 @@ export const CREATE_WORKOUT = gql`
   }
 `
 export const DESTROY_WORKOUT = gql`
-  mutation DestroyExercise($id: id!) {
+  mutation DestroyExercise($id: String!) {
     destroyExercise(input: { id: $id }) {
-      workout {
-        id
-        exerciseName
-      }
+      clientMutationId
     }
   }
 `
+
+// export const DESTROY_WORKOUT = gql`
+//   mutation DestroyExercise($id: id!) {
+//     destroyExercise(input: { id: $id }) {
+//       workout {
+//         id
+//         exerciseName
+//       }
+//     }
+//   }
+// `
 
 // // get a single book query
 // export const GET_BOOK = gql`

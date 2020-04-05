@@ -23,7 +23,7 @@ class App extends Component {
     super(props)
     this.state = {
       newList: [],
-      list: Exercises
+      list: Exercises,
     }
     this.removeItem = this.removeItem.bind(this)
     this.addItem = this.addItem.bind(this)
@@ -43,7 +43,7 @@ class App extends Component {
       newList.push(newItem.value)
       // Then we use that to set the state for list
       this.setState({
-        newList: newList
+        newList: newList,
       })
       // Finally, we need to reset the form
       newItem.classList.remove('is-danger')
@@ -67,7 +67,7 @@ class App extends Component {
     })
     // Set state to list
     this.setState({
-      list: list
+      list: list,
     })
   }
 
@@ -83,8 +83,8 @@ class App extends Component {
             </header>
             <div className="h1">
               <ScrollAnimation animateIn="fadeIn">
-                Nunc mattis enim ut tellus. At elementum eu facilisis sed odio
-                morbi.
+                Nunc mattis enim ut tellus. At lu elementum eu facilisis sed
+                odio morbi.
               </ScrollAnimation>
             </div>
             <div className="p2">
@@ -137,7 +137,7 @@ class App extends Component {
                   </form>
                 </section>
                 <div>
-                  {this.state.newList.map(item => (
+                  {this.state.newList.map((item) => (
                     <div key="">{item}</div>
                   ))}
                 </div>

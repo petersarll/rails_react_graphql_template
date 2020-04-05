@@ -4,16 +4,16 @@ import { Mutation } from 'react-apollo'
 import { DESTROY_WORKOUT } from '../apollo'
 
 class DeleteWorkout extends Component {
-  constructor() {
-    super()
+  constructor(props) {
+    super(props)
     this.state = {
-      id: 12,
+      id: '13',
       errors: []
     }
   }
 
   handleFormSubmit = props => {
-    let { destroyExercise } = props
+    // let { destroyExercise } = props
     let { id } = this.state
 
     console.log(id)
@@ -26,7 +26,7 @@ class DeleteWorkout extends Component {
         alert('Book Details deleted successfully')
         const { data } = response
         console.log(data)
-        window.location.reload(true)
+        window.location.reload(false)
       })
       .catch(console.log('youre encountering an error'))
     //   .catch(e => {
@@ -39,15 +39,13 @@ class DeleteWorkout extends Component {
 
   render() {
     return (
-      <Mutation mutation={DESTROY_WORKOUT}>
-        {destroyExercise => (
+      <div>
+        <Mutation mutation={DESTROY_WORKOUT} variables={{ id }}>
           <div>
-            <button onClick={this.handleFormSubmit({ destroyExercise })}>
-              click me to delete number 18
-            </button>
+            <button onClick={}>click me to delete number 18</button>
           </div>
-        )}
-      </Mutation>
+        </Mutation>
+      </div>
     )
   }
 }
